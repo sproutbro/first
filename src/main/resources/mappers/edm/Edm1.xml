@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="me.eisp.first.common.edm.repository.EdmRepository">
+    <select id="getEdm1Info" parameterType="String" resultType="me.eisp.first.common.edm.dto.Edm1Info">
+        SELECT
+            name,
+            empId,
+            item,
+            userIp dddd
+        FROM
+            eisp.emp_user
+        WHERE
+            empId = #{empId};
+    </select>
+</mapper>
