@@ -4,8 +4,6 @@ import lombok.AllArgsConstructor;
 import me.eisp.first.common.edm.dto.Edm1;
 import me.eisp.first.common.edm.service.EdmService;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

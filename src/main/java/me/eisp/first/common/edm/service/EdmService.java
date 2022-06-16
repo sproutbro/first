@@ -28,6 +28,9 @@ public class EdmService {
     public String sendEdm1(@Param("edm1") Edm1 edm1) {
 
         File html = new File(getClass().getClassLoader().getResource("edm/edm1.html").getFile());
+        ClassLoader classLoader = getClass().getClassLoader();
+        String name = classLoader.getName();
+        System.out.println("name = " + name);
 
         Edm1Info edm1Info = edmRepository.getEdm1Info(edm1.getText());
 

@@ -19,6 +19,8 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.apache.poi:poi:5.2.2'
+    implementation 'org.apache.poi:poi-ooxml:5.2.2'
     implementation 'org.springframework.boot:spring-boot-starter-mail'
     implementation 'org.jsoup:jsoup:1.14.3'
     implementation 'javax.servlet:jstl'
